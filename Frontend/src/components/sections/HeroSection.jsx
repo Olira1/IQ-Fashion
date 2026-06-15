@@ -97,7 +97,7 @@ export default function HeroSection() {
       >
         <source src={video} type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-black/80" />
+      <div className="absolute inset-0 bg-black/70" />
 
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
