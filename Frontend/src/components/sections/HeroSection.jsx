@@ -81,14 +81,14 @@ export default function HeroSection() {
     <section
       id="hero"
       ref={heroRef}
-      className="md:relative mb-16 md:overflow-visible md:bg-black pb-20 text-white sm:mb-20 sm:pb-24 md:pb-32"
+      className="md:relative mb-16 md:overflow-visible md:bg-black pb-20 text-white sm:mb-20 sm:pb-24 md:pb-32 min-h-screen"
     >
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBackground})` }}
       />
       <video
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 max-sm:h-[750px] h-full w-full object-cover"
         autoPlay
         loop
         muted
@@ -97,7 +97,7 @@ export default function HeroSection() {
       >
         <source src={video} type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-black/70" />
+      <div className="absolute inset-0 max-sm:h-[750px] bg-black/70" />
 
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
@@ -208,8 +208,8 @@ export default function HeroSection() {
         </nav>
       </header>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 pt-24 sm:pt-28 md:px-6 md:pt-28 mb-20 sm:mb-0">
-        <div className="mx-auto max-w-4xl pb-24 pt-14 text-center sm:pb-32 sm:pt-20 md:pb-60 md:pt-40">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 pt-24 sm:pt-28 md:px-6 md:pt-28 mb-20 sm:mb-0 max-sm:mb-32 md:mb-0 max-sm:h-[550px] flex items-center">
+        <div className="mx-auto max-w-4xl max-sm:mt-25 pb-24 pt-14 text-center sm:pb-32 sm:pt-20 md:pb-60 md:pt-40 w-full">
           <h1 className="font-sans text-[2rem] font-bold leading-[1.18] text-white sm:text-4xl sm:leading-tight md:text-6xl lg:text-5xl">
             IQFS - IQ Fashion School
             <span className="block mt-1 text-2xl sm:mt-0 sm:text-inherit">
@@ -252,7 +252,7 @@ export default function HeroSection() {
             <Button
               href="#contact"
               // variant="secondary"
-              className="w-full max-w-[280px] border-white/20 bg-gradient-to-r from-[#F94F95] to-[#000000] text-white hover:opacity-90 sm:w-auto sm:min-w-40"
+              className="w-full max-w-[280px] border-white/20 bg-gradient-to-r from-[#8B5CF6] to-[#3B82F6] text-white hover:opacity-90 sm:w-auto sm:min-w-40"
             >
               Contact
             </Button>
@@ -260,7 +260,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10">
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 max-sm:-bottom-16 z-10">
         <svg
           viewBox="0 0 1440 210"
           className="h-28 w-full md:h-36"
@@ -274,7 +274,7 @@ export default function HeroSection() {
         </svg>
       </div>
 
-      <div className="relative z-20 -mt-8 px-4 sm:-mt-12 md:-mt-8 md:px-6 lg:-mt-14 mb-20 sm:mb-0">
+      <div className="relative z-20 -mt-8 px-4 sm:-mt-12 md:-mt-8 md:px-6 lg:-mt-14 mb-20 sm:mb-32 md:mb-0">
         <div className="mx-auto max-w-5xl text-center">
           <div className="rounded-2xl border border-[var(--color-accent)]/25 bg-white/70 p-4 shadow-[0_10px_30px_rgba(248,79,149,0.15)] backdrop-blur-sm sm:rounded-3xl sm:p-6 -mb-24 sm:-mb-100 md:p-8 md:-mb-85 md:min-h-100">
             <div className=" grid gap-6 md:grid-cols-3 md:gap-0">

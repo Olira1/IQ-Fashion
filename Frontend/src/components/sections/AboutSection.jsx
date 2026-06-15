@@ -17,7 +17,7 @@ export default function AboutSection() {
   }
 
   return (
-    <section id="about" className="mt-6 bg-white px-4 py-10 sm:mt-10 sm:py-20 md:px-6 md:mt-50 mt-0 sm:mb-0 pt-0 sm:mb-0">
+    <section id="about" className="mt-6 bg-white px-4 py-10 sm:mt-10 sm:py-40 md:px-6 md:mt-50 mt-0 sm:mb-0 pt-0 sm:mb-0">
       <div>
         <h2 className="mx-auto pb-6 text-center text-2xl font-bold leading-snug bg-gradient-to-r from-[#F94F95] to-[#000000] bg-clip-text text-transparent sm:pb-12 sm:text-4xl">
           About IQFS - IQ Fashion School
