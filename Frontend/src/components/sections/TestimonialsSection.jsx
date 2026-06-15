@@ -56,15 +56,24 @@ export default function TestimonialsSection() {
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </button>
 
+          <div className="mx-auto mb-4 h-14 w-14 overflow-hidden rounded-full border-2 border-[var(--color-accent)]/70 shadow-[0_4px_12px_rgba(0,0,0,0.15)] sm:mb-6 sm:h-16 sm:w-16 md:mb-8 md:h-20 md:w-20 lg:h-60 lg:w-60">
+            <img
+              src={testimonial.image}
+              alt={testimonial.imageAlt}
+              className="h-full w-full object-cover"
+              style={{
+                objectPosition: testimonial.imagePosition ?? 'center top',
+                transform: `scale(${testimonial.imageScale ?? 1.25})`,
+              }}
+            />
+          </div>
+
           <blockquote className="px-8 font-[var(--font-display)] text-lg leading-8 text-[var(--color-ink)] sm:px-10 sm:text-2xl sm:leading-relaxed md:text-4xl">
             “{testimonial.quote}”
           </blockquote>
 
           <figcaption className="mt-5 sm:mt-8">
-            <span className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-[var(--color-accent)] text-base font-semibold text-white sm:h-12 sm:w-12 sm:text-lg">
-              {testimonial.initials}
-            </span>
-            <p className="mt-2 text-sm font-semibold text-[var(--color-ink)] sm:mt-3 sm:text-base">
+            <p className="text-sm font-semibold text-[var(--color-ink)] sm:text-base">
               {testimonial.name}
             </p>
             <p className="text-sm text-[var(--color-muted)]">{testimonial.role}</p>

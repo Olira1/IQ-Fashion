@@ -97,7 +97,7 @@ export default function HeroSection() {
       >
         <source src={video} type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-black/80" />
+      <div className="absolute inset-0 bg-black/70" />
 
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
@@ -248,6 +248,13 @@ export default function HeroSection() {
               className="w-full max-w-[280px] border-white/20 bg-gradient-to-r from-[#F94F95] to-[#000000] text-white hover:opacity-90 sm:w-auto sm:min-w-40"
             >
               View Schedule
+            </Button>
+            <Button
+              href="#contact"
+              // variant="secondary"
+              className="w-full max-w-[280px] border-white/20 bg-gradient-to-r from-[#F94F95] to-[#000000] text-white hover:opacity-90 sm:w-auto sm:min-w-40"
+            >
+              Contact
             </Button>
           </div>
         </div>

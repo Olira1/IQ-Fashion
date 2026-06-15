@@ -4,9 +4,13 @@ import { resolveImagePath } from '../../utils/imageResolver'
 import SectionHeading from '../ui/SectionHeading'
 
 export default function PortfolioSection() {
-  const displayItems = portfolioItems.slice(0, 8)
+  const displayItems = portfolioItems.slice(0, 12)
   const cardTilt = ['rotate-0', 'rotate-0', 'rotate-0', 'rotate-0', 'rotate-0', 'rotate-0']
   const cardDepth = [
+    "[transform:rotateY(0deg)_rotateX(0deg)]",
+    "[transform:rotateY(0deg)_rotateX(0deg)]",
+    "[transform:rotateY(0deg)_rotateX(0deg)]",
+    "[transform:rotateY(0deg)_rotateX(0deg)]",
     "[transform:rotateY(0deg)_rotateX(0deg)]",
     "[transform:rotateY(0deg)_rotateX(0deg)]",
     "[transform:rotateY(0deg)_rotateX(0deg)]",
