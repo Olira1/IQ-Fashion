@@ -249,6 +249,13 @@ export default function HeroSection() {
             >
               View Schedule
             </Button>
+            <Button
+              href="#contact"
+              // variant="secondary"
+              className="w-full max-w-[280px] border-white/20 bg-gradient-to-r from-[#F94F95] to-[#000000] text-white hover:opacity-90 sm:w-auto sm:min-w-40"
+            >
+              Contact
+            </Button>
           </div>
         </div>
       </div>

@@ -25,9 +25,9 @@ export default function Footer() {
             <div>
               <div className="inline-flex items-center gap-2 text-lg font-semibold sm:text-xl">
                 <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#f3b8a6] text-[11px] font-bold text-[#2a1210] sm:h-7 sm:w-7 sm:text-xs">
-                  A
+                  IQ
                 </span>
-                IQ FDTC
+                IQ FS
               </div>
               <p className="mt-3 max-w-xs text-sm leading-6 text-[#d6c0b8] sm:mt-4">
                 A modern fashion design and sewing training institute building the next generation of fashion professionals.
