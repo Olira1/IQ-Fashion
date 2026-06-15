@@ -8,6 +8,10 @@ export default function TestimonialsSection() {
   const [activeIndex, setActiveIndex] = useState(0)
   const testimonial = testimonials[activeIndex]
 
+  console.log('Current testimonial:', testimonial);
+  console.log('All testimonials:', testimonials);
+  console.log('Active index:', activeIndex);
+
   const showNextTestimonial = () => {
     setActiveIndex((current) => (current + 1) % testimonials.length)
   }
