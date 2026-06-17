@@ -254,7 +254,7 @@ export default function HeroSection() {
               // variant="secondary"
               className="w-full max-w-[280px] border-white/20 bg-gradient-to-r from-[#8B5CF6] to-[#3B82F6] text-white hover:opacity-90 sm:w-auto sm:min-w-40"
             >
-              Contact
+              Location
             </Button>
           </div>
         </div>
