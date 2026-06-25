@@ -17,7 +17,7 @@ export default function CTASection() {
             <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-white/75 md:text-[10px]">
               Your Future Awaits
             </p>
-            <h2 className="mt-2.5 font-[var(--font-display)] text-4xl leading-[1.1] text-balance md:text-5xl">
+            <h2 className="mt-2.5 `font-[var(--font-display)]` text-4xl leading-[1.1] text-balance md:text-5xl">
               Start Your Fashion Journey Today
             </h2>
             <p className="mt-3 max-w-sm text-[11px] leading-5 text-white/80 md:text-xs">
@@ -30,7 +30,7 @@ export default function CTASection() {
                 href="/register"
                 size="sm"
                 variant="secondary"
-                className="border-white/70 bg-white text-[11px] text-[var(--color-ink)]"
+                className="border-white/70 bg-white text-[11px] `text-[var(--color-ink)]`"
               >
                 Register Now
               </Button>

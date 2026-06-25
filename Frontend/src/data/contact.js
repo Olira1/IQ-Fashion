@@ -26,12 +26,13 @@ export const contactDetails = [
   {
     id: "email",
     label: "Email",
-    value: "hello@atelier.com",
-    href: "mailto:hello@atelier.com",
+    value: "ifaqaal@gmail.com",
+    href: "mailto:ifaqaal@gmail.com",
   },
   {
     id: "address",
     label: "Address",
-    value: "Fashion District, City Center",
+    value:
+      "Woliso in front of Serafera Hotel and Alem gena in front of Kenteri Hospital Sittina building 3th floor",
   },
 ];

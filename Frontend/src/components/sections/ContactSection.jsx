@@ -21,7 +21,10 @@ export default function ContactSection() {
   if (!contactDetails.length) return null
 
   return (
-    <section id="contact" className="bg-[var(--color-cream)] px-4 py-12 sm:py-20 md:px-6">
+    <section
+      id="contact"
+      className="bg-[var(--color-cream)] px-4 py-12 sm:py-20 md:px-6"
+    >
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Get In Touch"
@@ -37,7 +40,7 @@ export default function ContactSection() {
                 className="mb-2.5 flex items-center gap-2.5 rounded-xl border border-[var(--color-border-soft)] bg-[#fbfbfb] px-3 py-2.5 last:mb-0 sm:mb-3 sm:gap-3 sm:rounded-2xl"
               >
                 <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--color-peach)] text-[11px] font-bold text-[var(--color-accent-deep)] sm:h-7 sm:w-7 sm:text-[10px]">
-                  {contactIconById[item.id] ?? '?'}
+                  {contactIconById[item.id] ?? "?"}
                 </span>
                 <div className="min-w-0">
                   <p className="text-[11px] font-semibold uppercase tracking-wider text-[#9b8f89] sm:text-[10px]">
@@ -48,18 +51,22 @@ export default function ContactSection() {
                       className="break-all text-sm text-[var(--color-ink)] transition hover:text-[var(--color-accent)] sm:truncate sm:text-xs"
                       href={item.href}
                       rel="noreferrer"
-                      target={item.href.startsWith('http') ? '_blank' : undefined}
+                      target={
+                        item.href.startsWith("http") ? "_blank" : undefined
+                      }
                     >
                       {item.value}
                     </a>
                   ) : (
-                    <p className="break-words text-sm text-[var(--color-ink)] sm:truncate sm:text-xs">{item.value}</p>
+                    <p className="break-words text-sm text-[var(--color-ink)] sm:truncate sm:text-xs">
+                      {item.value}
+                    </p>
                   )}
                 </div>
               </article>
             ))}
 
-            <article className="mt-2.5 rounded-xl border border-[var(--color-border-soft)] bg-[#fbfbfb] px-3 py-3 sm:mt-3 sm:rounded-2xl">
+            {/* <article className="mt-2.5 rounded-xl border border-[var(--color-border-soft)] bg-[#fbfbfb] px-3 py-3 sm:mt-3 sm:rounded-2xl">
               <h3 className="text-[11px] font-semibold uppercase tracking-wider text-[#9b8f89] sm:text-[10px]">
                 Follow Us
               </h3>
@@ -73,18 +80,23 @@ export default function ContactSection() {
                     rel="noreferrer"
                     target="_blank"
                   >
-                    {socialIconByLabel[social.label] ?? social.label.slice(0, 1)}
+                    {socialIconByLabel[social.label] ??
+                      social.label.slice(0, 1)}
                   </a>
                 ))}
               </div>
-            </article>
+            </article> */}
           </div>
 
           <div>
             <div className="overflow-hidden rounded-2xl border border-[var(--color-border-soft)] bg-white shadow-sm">
               <iframe
                 title="IQ TDTC location map"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=45.23%2C2.00%2C45.45%2C2.20&layer=mapnik"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d493.1980050814542!2d37.97178593085545!3d8.539699964284445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164d29004a4c39a3%3A0x7f20afe77283b2c6!2sIQ%20Fashion!5e0!3m2!1sen!2set!4v1782391508827!5m2!1sen!2set"
+
+
+
+
                 className="h-[220px] w-full sm:h-[270px] md:h-[300px]"
                 loading="lazy"
               />
@@ -93,5 +105,5 @@ export default function ContactSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
