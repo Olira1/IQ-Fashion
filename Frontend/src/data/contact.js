@@ -32,7 +32,6 @@ export const contactDetails = [
   {
     id: "address",
     label: "Address",
-    value:
-      "Woliso in front of Serafera Hotel and Alem gena in front of Kenteri Hospital Sittina building 3th floor",
+    value: "WALISO infront of Ethio Telecom at the side of Sirafire hotel and ALEMGENA infront of Kenteri Hospital Sitina Building 3rd floar",
   },
 ];
