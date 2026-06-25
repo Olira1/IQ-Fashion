@@ -30,12 +30,15 @@ export default function Footer() {
                 IQ FS
               </div>
               <p className="mt-3 max-w-xs text-sm leading-6 text-[#d6c0b8] sm:mt-4">
-                A modern fashion design and sewing training institute building the next generation of fashion professionals.
+                A modern fashion design and sewing training institute building
+                the next generation of fashion professionals.
               </p>
             </div>
 
             <div>
-              <h4 className="text-sm font-semibold sm:text-base">Quick Links</h4>
+              <h4 className="text-sm font-semibold sm:text-base">
+                Quick Links
+              </h4>
               <ul className="mt-3 space-y-2 text-sm text-[#d6c0b8] sm:mt-4 sm:space-y-2.5">
                 {quickLinks.map((link) => (
                   <li key={link.label}>
@@ -51,10 +54,13 @@ export default function Footer() {
               <h4 className="text-sm font-semibold sm:text-base">Contact</h4>
               <ul className="mt-3 space-y-2 text-sm text-[#d6c0b8] sm:mt-4 sm:space-y-2.5">
                 <li>+251 91 159 2945</li>
-                <li>hello@IQ FDTC.com</li>
-                <li>Fashion District, City Center</li>
+                <li>ifaqaal@gmail.com</li>
+                <li>
+                  Woliso in front of Serafera Hotel and Alem gena in front of
+                  Kenteri Hospital Sittina building 3th floor
+                </li>
               </ul>
-              <div className="mt-3 flex items-center gap-2 sm:mt-4 sm:gap-2.5">
+              {/* <div className="mt-3 flex items-center gap-2 sm:mt-4 sm:gap-2.5">
                 {socials.map((item) => (
                   <a
                     key={item}
@@ -65,7 +71,7 @@ export default function Footer() {
                     {item}
                   </a>
                 ))}
-              </div>
+              </div> */}
             </div>
 
             <div>
@@ -90,7 +96,7 @@ export default function Footer() {
           </div>
 
           <div className="mt-8 flex flex-col gap-2 border-t border-white/10 pt-4 text-xs leading-5 text-[#c7b0a8] sm:mt-10 sm:gap-3 sm:pt-5 sm:flex-row sm:items-center sm:justify-between">
-            <p>© 2026 IQ FDTC Fashion Institute. All rights reserved.</p>
+            <p>© 2026 IQ FS Fashion Institute. All rights reserved.</p>
             <p>Crafted with care for future fashion professionals.</p>
           </div>
         </div>
