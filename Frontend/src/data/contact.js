@@ -14,7 +14,7 @@ export const contactDetails = [
   {
     id: "TikTok",
     label: "TikTok",
-    value: "IQ Fashion Design school",
+    value: "IQ Fashion Design school.",
     href: "https://www.tiktok.com/@user00107638?_r=1&_t=ZS-96xdPjlX5GO",
   },
   {
