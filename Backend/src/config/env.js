@@ -24,5 +24,6 @@ export function loadEnv() {
     CORS_ORIGIN: process.env.CORS_ORIGIN,
     TELEGRAM_BOT_TOKEN: process.env.TELEGRAM_BOT_TOKEN || "",
     TELEGRAM_GROUP_ID: process.env.TELEGRAM_GROUP_ID || "",
+    GROQ_API_KEY: process.env.GROQ_API_KEY || "",
   };
 }

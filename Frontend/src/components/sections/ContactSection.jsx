@@ -37,16 +37,33 @@ export default function ContactSection() {
             {contactDetails.map((item) => (
               <article
                 key={item.id}
-                className="mb-2.5 flex items-center gap-2.5 rounded-xl border border-[var(--color-border-soft)] bg-[#fbfbfb] px-3 py-2.5 last:mb-0 sm:mb-3 sm:gap-3 sm:rounded-2xl"
+                className={`mb-2.5 flex gap-2.5 rounded-xl border border-[var(--color-border-soft)] bg-[#fbfbfb] px-3 py-2.5 last:mb-0 sm:mb-3 sm:gap-3 sm:rounded-2xl ${
+                  item.lines ? "items-start" : "items-center"
+                }`}
               >
-                <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--color-peach)] text-[11px] font-bold text-[var(--color-accent-deep)] sm:h-7 sm:w-7 sm:text-[10px]">
+                <span
+                  className={`inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--color-peach)] text-[11px] font-bold text-[var(--color-accent-deep)] sm:h-7 sm:w-7 sm:text-[10px] ${
+                    item.lines ? "mt-0.5" : ""
+                  }`}
+                >
                   {contactIconById[item.id] ?? "?"}
                 </span>
-                <div className="min-w-0">
+                <div className="min-w-0 flex-1">
                   <p className="text-[11px] font-semibold uppercase tracking-wider text-[#9b8f89] sm:text-[10px]">
                     {item.label}
                   </p>
-                  {item.href ? (
+                  {item.lines ? (
+                    <div className="mt-1 space-y-1.5">
+                      {item.lines.map((line) => (
+                        <p
+                          key={line}
+                          className="break-words text-sm leading-relaxed text-[var(--color-ink)] sm:text-sm"
+                        >
+                          {line}
+                        </p>
+                      ))}
+                    </div>
+                  ) : item.href ? (
                     <a
                       className="break-all text-sm text-[var(--color-ink)] transition hover:text-[var(--color-accent)] sm:truncate sm:text-xs"
                       href={item.href}
