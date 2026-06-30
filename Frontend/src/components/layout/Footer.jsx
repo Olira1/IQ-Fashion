@@ -97,7 +97,7 @@ export default function Footer() {
 
           <div className="mt-8 flex flex-col gap-2 border-t border-white/10 pt-4 text-xs leading-5 text-[#c7b0a8] sm:mt-10 sm:gap-3 sm:pt-5 sm:flex-row sm:items-center sm:justify-between">
             <p>© 2026 IQ FS Fashion Institute. All rights reserved.</p>
-            <p>Crafted with care for future fashion professionals.</p>
+            <p>Crafted with care for future fashion professionals. </p>
           </div>
         </div>
       </div>
