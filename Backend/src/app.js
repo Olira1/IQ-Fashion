@@ -6,6 +6,7 @@ import morgan from "morgan";
 import { loadEnv } from "./config/env.js";
 import healthRouter from "./routes/health.js";
 import registerRouter from "./routes/register.js";
+import chatRouter from "./routes/chat.js";
 
 const app = express();
 const env = loadEnv();
@@ -46,5 +47,6 @@ app.get("/", (_req, res) => {
 
 app.use("/api/health", healthRouter);
 app.use("/api/register", registerRouter);
+app.use("/chat", chatRouter);
 
 export default app;
