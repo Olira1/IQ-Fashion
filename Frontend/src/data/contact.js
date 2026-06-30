@@ -32,6 +32,9 @@ export const contactDetails = [
   {
     id: "address",
     label: "Address",
-    value: "WALISO infront of Ethio Telecom at the side of Sirafire hotel and ALEMGENA infront of Kenteri Hospital Sitina Building 3rd floar",
+    lines: [
+      "📍 Waliso Branch: In front of Ethio Telecom, next to Sirafire Hotel.",
+      "📍 Alem Gena Branch: In front of Kenteri Hospital, on the 3rd floor of Sitina Building.",
+    ],
   },
 ];
