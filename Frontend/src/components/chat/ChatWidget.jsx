@@ -199,7 +199,7 @@ export default function ChatWidget() {
               value={input}
               onChange={(event) => setInput(event.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder="Ask about programs, experience, locations…"
+              placeholder="Ask about anything"
               disabled={isLoading}
               className="max-h-28 min-h-[44px] flex-1 resize-none rounded-2xl border border-[var(--color-border-soft)] bg-[var(--color-cream)] px-4 py-3 text-sm text-[var(--color-ink)] outline-none transition focus:border-[var(--color-accent)] disabled:opacity-60"
             />
@@ -215,21 +215,17 @@ export default function ChatWidget() {
         </form>
       </div>
 
-      <button
-        type="button"
-        onClick={() => setIsOpen((open) => !open)}
-        className={`fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[var(--color-accent)] to-[var(--color-accent-deep)] text-white shadow-lg shadow-[var(--color-accent)]/30 transition duration-300 hover:scale-105 hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)] sm:bottom-6 sm:right-6 ${
-          isOpen ? 'rotate-0 scale-95' : 'rotate-0'
-        }`}
-        aria-label={isOpen ? 'Close AI chat' : 'Open AI chat'}
-        aria-expanded={isOpen}
-      >
-        {isOpen ? (
-          <X className="h-6 w-6" />
-        ) : (
-          <MessageCircle className="h-6 w-6" />
-        )}
-      </button>
+{!isOpen && (
+  <button
+    type="button"
+    onClick={() => setIsOpen(true)}
+    className="fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[var(--color-accent)] to-[var(--color-accent-deep)] text-white shadow-lg shadow-[var(--color-accent)]/30 transition duration-300 hover:scale-105 hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)] sm:bottom-6 sm:right-6"
+    aria-label="Open AI chat"
+    aria-expanded={isOpen}
+  >
+    <MessageCircle className="h-6 w-6" />
+  </button>
+)}
     </>
   )
 }
